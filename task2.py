@@ -9,7 +9,7 @@ There will be a maximum of 3 guesses allowed
 
 expectedUsername = "systemadmin"
 expectedPassword = "master"
-y=expectedPassword
+#Way 1
 
 for i in range(1,4):
     x=str(input(f"This is guess {i}.\nEnter your username.=>"))
@@ -21,7 +21,20 @@ for i in range(1,4):
                 print('Access Granted')
                 exit()
         else:
+            print('Access Denied')
             break
-        
 else:
     print('Access Denied')
+
+#Way 2
+
+for q in range(1,4):
+    unm=input(f"This is guess {q}.\nEnter your username.=>")
+    pwd=input(f"This is guess {q}.\nEnter your password.=>")
+    if unm==expectedUsername and pwd==expectedPassword:
+        print('Access Granted.')
+        break
+    else:
+        print('Incorrect')
+else:
+    print('Access Denied.')

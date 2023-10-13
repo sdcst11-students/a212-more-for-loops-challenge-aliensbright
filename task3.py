@@ -14,6 +14,10 @@ users = ["annie","betty","charles","doug","eddie","flon"]
 passwordlist = ["12345","password","iloveyou","mom","default","0"]
 username=str(input('Enter your username=>'))
 password=str(input('Enter your password=>'))
-for i in users:
-    if password==passwordlist[i]:
+for i in range(6):
+    #print(i,users[i],passwordlist[i])
+    if username==users[i] and password==passwordlist[i]:
         print('Access granted')
+        break
+else:
+    print('Access denied')
