@@ -11,20 +11,20 @@ expectedUsername = "systemadmin"
 expectedPassword = "master"
 #Way 1
 
-for i in range(1,4):
-    x=str(input(f"This is guess {i}.\nEnter your username.=>"))
-    if x==expectedUsername:
-        print('Correct')
-        for m in range(1,4):
-            y=str(input(f"\nThis is guess {m}.\nEnter your password.=>"))
-            if y==expectedPassword:
-                print('Access Granted')
-                exit()
-        else:
-            print('Access Denied')
-            break
-else:
-    print('Access Denied')
+#for i in range(1,4):
+#    x=str(input(f"This is guess {i}.\nEnter your username.=>"))
+#    if x==expectedUsername:
+#        print('Correct')
+#        for m in range(1,4):
+#            y=str(input(f"\nThis is guess {m}.\nEnter your password.=>"))
+#            if y==expectedPassword:
+#                print('Access Granted')
+#                exit()
+#        else:
+#            print('Access Denied')
+#            break
+#else:
+#    print('Access Denied')
 
 #Way 2
 
